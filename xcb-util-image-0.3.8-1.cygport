@@ -1,7 +1,0 @@
-DESCRIPTION="XCB image library"
-HOMEPAGE="http://xcb.sourceforge.net/"
-SRC_URI="http://xcb.freedesktop.org/dist/${P}.tar.bz2"
-
-PKG_NAMES="libxcb-image0 libxcb-image-devel"
-libxcb_image0_CONTENTS="usr/bin/cygxcb-image-0.dll usr/share/doc/"
-libxcb_image_devel_CONTENTS="usr/include/ usr/lib/"

@@ -1,0 +1,23 @@
+NAME="xcb-util-image"
+VERSION=0.3.9
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="XCB image library"
+DESCRIPTION="The xcb-util module provides a number of libraries which sit on
+top of libxcb, the core X protocol library, and some of the extension libraries.
+These experimental libraries provide convenience functions and interfaces which
+make the raw X protocol more usable. Some of the libraries also provide
+client-side code which is not strictly part of the X protocol but which have
+traditionally been provided by Xlib."
+HOMEPAGE="http://xcb.sourceforge.net/"
+SRC_URI="http://xcb.freedesktop.org/dist/${P}.tar.bz2"
+
+DEPEND="pkgconfig(xcb-shm)
+	pkgconfig(xcb-util)
+	pkgconfig(xproto)"
+
+PKG_NAMES="libxcb-image0 libxcb-image-devel"
+libxcb_image0_CONTENTS="usr/bin/cygxcb-image-0.dll usr/share/doc/"
+libxcb_image_devel_CONTENTS="usr/include/ usr/lib/"
+
+KEEP_LA_FILES="none"
